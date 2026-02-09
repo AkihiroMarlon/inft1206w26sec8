@@ -5,4 +5,8 @@ h1{
 .type1{
     background-color: aquamarine;
 }
+
+header p {
+    color: rebeccapurple;
+}
 /*This website is ugly but good practice :D*/
