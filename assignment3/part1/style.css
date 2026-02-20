@@ -27,5 +27,15 @@ ul {
     border-radius: 20px;
 }
 
-
 /*Text Styles*/
+
+h1{
+    color: darkslategray;
+    border: 10px dotted purple;
+    font-size: 2rem;
+}
+
+h2{
+    font-style: italic;
+    font-size: 1.5rem;
+}
