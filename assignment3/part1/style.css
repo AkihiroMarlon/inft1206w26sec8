@@ -20,5 +20,11 @@ body {
     margin: 0 auto;
 }
 
+ul {
+    background-color: white;
+    border: 5px, purple;
+    padding: 30px;
+}
+
 
 /*Text Styles*/
