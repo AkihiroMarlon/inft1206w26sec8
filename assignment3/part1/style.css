@@ -44,3 +44,17 @@ div{
     color: darkslategray;
     font-weight: bold;
 }
+
+a:link{
+    color: green;
+}   
+
+a:hover{
+    color: darkgreen;
+    text-decoration: none;
+}
+
+a:focus-visible{
+    color: darkgreen;
+    text-decoration: none;
+}
