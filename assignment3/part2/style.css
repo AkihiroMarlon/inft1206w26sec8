@@ -59,6 +59,23 @@ li{
     list-style-type: circle;
 }
 
+nav li{
+    list-style-type: none;
+}
+
+nav li a{
+    display: inline-block;
+    font-weight: bold;
+    border: #aa6666 3px solid;
+    line-height: 3.5;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    margin: 2px;
+}
+
+
 /* Layout */
 
 main {
