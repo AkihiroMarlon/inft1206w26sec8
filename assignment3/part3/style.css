@@ -30,6 +30,9 @@ img {
 .grid {
     margin: 0 auto;
     max-width: 980px;
+    gap: 15px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
 
 nav {
