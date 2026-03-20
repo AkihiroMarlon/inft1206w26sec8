@@ -1,3 +1,11 @@
+/*
+Name: Amanda Jones
+File: p1.js
+Date: March 20, 2026
+Index File for part 1 of assignment 4
+*/
+
+
 // Complete variable definitions and random functions
 
 const customName = document.getElementById("custom-name");
