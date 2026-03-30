@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        form div{
+            margin-bottom: 20px;
+        }
+    </style>
+    <title>Week 11</title>
+</head>
+<body>
+    <h1>Week 11: Intro to Forms</h1>
+    <form action="#" method="get"> <!--Get puts data in the URL, Post puts it somewhere unviewable by just looking, good for sensitive data-->
+        <div>
+            <label for="fnaf">First Name:</label>
+            <input type="text" id="fnaf" name="fname" title="First Name :D" placeholder="First Name"> <!--Named them differently so I can tell them apart in practice-->
+        </div>
+        <div>
+            <label for="lan">Last Name:</label>
+            <input type="text" id="lan" name="lname" title="Last Name :D" placeholder="Last Name">
+        </div>
+        <div>
+            <label for="pass">Password:</label>
+            <input type="password" name="pass" id="word">
+        </div>
+        <div>
+            <label for="fi">Upload your Assignment:</label>
+            <input type="file" name="fi" id="le">
+        </div>
+        <div>
+            <label for="">What Are Your Hobbies?</label>
+                <div>
+                    <input type="checkbox" name="interest" id="interest1" value="gaming" checked>
+                    <label for="interest1">Gaming</label>
+        
+                    <input type="checkbox" name="interest" id="interest2" value="drawing">
+                    <label for="interest2">Drawing</label>
+        
+                    <input type="checkbox" name="interest" id="interest3" value="music">
+                    <label for="interest3">Music</label>
+                </div>
+        </div>
+        <div>
+            <label for="">Which OS do you Prefer?</label>
+            
+            <div>
+                <input type="radio" name="system" id="OS1" value="Windows">
+                <label for="OS1">Windows</label>
+    
+                <input type="radio" name="system" id="OS2" value="Linux">
+                <label for="OS2">Linux</label>
+            </div>   
+        </div>
+        <div>
+            <label for="weekend">What do you want to do this weekend?</label>
+            <select name="weekend" id="endofweek">
+                <option value="games">Play Video Games</option> 
+                <option value="gym">Go to the Gym</option>
+                <option value="book">Read a Book</option>
+                <option value="watch">Watch Movies or Show</option>
+                <option value="homework">Do Homework</option>
+            </select>
+        </div>
+        <div>
+            <label for="">How is the Web Dev Class?</label>
+            <textarea name="" id="" rows="5" cols="20"></textarea>
+        </div>
+        <input type="Submit">
+        <input type="reset">
+        <input type="button" value="OK">
+    </form>
+</body>
+</html>
