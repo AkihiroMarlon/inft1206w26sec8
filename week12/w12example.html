@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function validate(){
+            let fname = document.querySelector('#fname').value.trim();
+            if (fname.length == 0){
+                document.querySelector('#errorfn').textContent = "You must input a value for the first name.";
+                return false;
+            }
+            else if (fname.length < 5){
+                document.querySelector('#errorfn').textContent = "First Name must be at least 5 characters"
+                return false;
+            }
+            else {
+                fname = fname.toLowerCase();
+                for (let i=0; i<fname; i++){
+                if (fname[i] < 'a' || fname[i] > 'z');{
+                    document.querySelector('#errorfn').textContent = "All characters in the first name must be an alphabet."
+                    return false;
+                }
+            }
+            }
+            
+            let lname = document.querySelector('#lname').value.trim();
+            if (lname.length == 0){
+                document.querySelector('#errorln').textContent = "You must input a value for the last name.";
+                return false;
+            }
+            else if (fname.length < 5){
+                document.querySelector('#errorln').textContent = "Last Name must be at least 5 characters"
+                return false;
+            }
+            else {
+                fname = fname.toLowerCase();
+                for (let i=0; i<fname; i++){
+                if (fname[i] < 'a' || fname[i] > 'z');{
+                    document.querySelector('#errorln').textContent = "All characters in the last name must be an alphabet."
+                    return false;
+                }
+            }
+            }
+        }
+    </script>
+    <title>Week 12</title>
+</head>
+<body>
+    <h1>Form Validation</h1>
+    <form action = "https://httpbin.org/get" method="get" onsubmit="return validate();">
+        <div>
+            <label for="fname">First Name: </label>
+            <input type="text" id="fname" name="fname" required>
+            <span id="errorfn"></span>
+        </div>
+        <div>
+            <label for="lname">Last Name: </label>
+            <input type="text" id="lname" name="lname" required>
+            <span id="errorln"></span>
+        </div>
+        <div>
+            <label for="numberage">Age: </label>
+            <input type="number" name="numberage" id="numberage" required min="0" max="100">
+        </div>
+        <div>
+            <input type="submit">
+            <input type="reset">
+        </div>
+    </form>
+</body>
+</html>
