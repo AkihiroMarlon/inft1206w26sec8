@@ -19,7 +19,7 @@
             else {
                 fname = fname.toLowerCase();
                 for (let i=0; i<fname.length; i++){
-                if (fname[i] < 'a' || fname[i] > 'z');{
+                if (fname[i] < 'a' || fname[i] > 'z'){
                     document.querySelector('#errorfn').textContent = "All characters in the first name must be an alphabet."
                     document.querySelector('#errorfn').style.color = "red";
                     return false;
@@ -33,15 +33,15 @@
                 document.querySelector('#errorln').style.color = "red";
                 return false;
             }
-            else if (fname.length < 5){
+            else if (lname.length < 5){
                 document.querySelector('#errorln').textContent = "Last name must be at least 5 characters."
                 document.querySelector('#errorln').style.color = "red";
                 return false;
             }
             else {
-                fname = fname.toLowerCase();
-                for (let i=0; i<fname.length; i++){
-                if (fname[i] < 'a' || fname[i] > 'z');{
+                lname = lname.toLowerCase();
+                for (let i=0; i<lname.length; i++){
+                if (lname[i] < 'a' || lname[i] > 'z');{
                     document.querySelector('#errorln').textContent = "All characters in the last name must be an alphabet."
                     document.querySelector('#errorln').style.color = "red";
                     return false;
