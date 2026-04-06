@@ -41,7 +41,7 @@
             else {
                 lname = lname.toLowerCase();
                 for (let i=0; i<lname.length; i++){
-                if (lname[i] < 'a' || lname[i] > 'z');{
+                if (lname[i] < 'a' || lname[i] > 'z'){
                     document.querySelector('#errorln').textContent = "All characters in the last name must be an alphabet."
                     document.querySelector('#errorln').style.color = "red";
                     return false;
