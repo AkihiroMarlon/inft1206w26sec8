@@ -8,10 +8,12 @@
             let fname = document.querySelector('#fname').value.trim();
             if (fname.length == 0){
                 document.querySelector('#errorfn').textContent = "You must input a value for the first name.";
+                document.querySelector('#errorfn').style.color = "red";
                 return false;
             }
             else if (fname.length < 5){
                 document.querySelector('#errorfn').textContent = "First Name must be at least 5 characters"
+                document.querySelector('#errorfn').style.color = "red";
                 return false;
             }
             else {
@@ -19,6 +21,7 @@
                 for (let i=0; i<fname; i++){
                 if (fname[i] < 'a' || fname[i] > 'z');{
                     document.querySelector('#errorfn').textContent = "All characters in the first name must be an alphabet."
+                    document.querySelector('#errorfn').style.color = "red";
                     return false;
                 }
             }
@@ -27,10 +30,12 @@
             let lname = document.querySelector('#lname').value.trim();
             if (lname.length == 0){
                 document.querySelector('#errorln').textContent = "You must input a value for the last name.";
+                document.querySelector('#errorln').style.color = "red";
                 return false;
             }
             else if (fname.length < 5){
                 document.querySelector('#errorln').textContent = "Last Name must be at least 5 characters"
+                document.querySelector('#errorln').style.color = "red";
                 return false;
             }
             else {
@@ -38,6 +43,7 @@
                 for (let i=0; i<fname; i++){
                 if (fname[i] < 'a' || fname[i] > 'z');{
                     document.querySelector('#errorln').textContent = "All characters in the last name must be an alphabet."
+                    document.querySelector('#errorln').style.color = "red";
                     return false;
                 }
             }
