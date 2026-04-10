@@ -42,3 +42,23 @@ for (const image of images){
     });
 }
 
+//Now we make updateDisplayedImage a thing
+function updateDisplayedImage(ent){
+    displayedImage.alt = ent.target.alt;
+    displayedImage.src = ent.target.src;
+}
+
+//And the last thing left is the button
+btn.addEventListener("click", () =>{
+    if (btn.classList.contains("dark")){
+        btn.textContent = "Lighten";
+        overlay.style.backgroundColor = "rgb(0 0 0 / 0.5)";
+    }
+
+    else{
+        btn.textContent = "Darken";
+        overlay.style.backgroundColor = "rgb(0 0 0 / 0)"
+    }
+
+    btn.classList.toggle("dark");
+});
