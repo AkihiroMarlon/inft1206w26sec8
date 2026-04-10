@@ -1,3 +1,10 @@
+/*
+Name: Amanda Jones
+File: main.js
+Date: April 10, 2026
+Javascript File for part 3 of assignment 4
+*/
+
 // setup canvas
 
 const canvas = document.querySelector("canvas");
