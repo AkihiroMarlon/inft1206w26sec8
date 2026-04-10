@@ -22,3 +22,23 @@ const images = [
 
 const baseURL = "https://mdn.github.io/shared-assets/images/examples/learn/gallery/";
 
+// For loop of images
+
+for (const image of images){
+    const newImage = document.createElement("img");
+    newImage.alt = image.alt;
+    newImage.src = baseURL + image.filename;
+    newImage.tabIndex = "0";
+
+    //now that newImage is made, do the stuff with newImage
+    thumbBar.appendChild(newImage);
+    newImage.addEventListener("click", updateDisplayedImage);
+
+    //I think this is how you do the enter key thing?
+    newImage.addEventListener("keydown", (ent) => {
+        if (ent.code === "Enter"){
+            updateDisplayedImage(ent);
+        }
+    });
+}
+
