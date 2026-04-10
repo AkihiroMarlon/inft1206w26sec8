@@ -52,12 +52,12 @@ function updateDisplayedImage(ent){
 btn.addEventListener("click", () =>{
     if (btn.classList.contains("dark")){
         btn.textContent = "Lighten";
-        overlay.style.backgroundColor = rgb(0, 0, 0 / 0.5);
+        overlay.style.backgroundColor = "rgb(0 0 0 / 0.5)";
     }
 
     else{
         btn.textContent = "Darken";
-        overlay.style.backgroundColor = rgb(0, 0, 0 / 0);
+        overlay.style.backgroundColor = "rgb(0 0 0 / 0)";
     }
 
     btn.classList.toggle("dark");
