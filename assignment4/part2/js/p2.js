@@ -27,7 +27,7 @@ const baseURL = "https://mdn.github.io/shared-assets/images/examples/learn/galle
 for (const image of images){
     const newImage = document.createElement("img");
     newImage.alt = image.alt;
-    newImage.src = baseURL + image.filename;
+    newImage.src = `${baseURL}${image.filename}`;
     newImage.tabIndex = "0";
 
     //now that newImage is made, do the stuff with newImage
@@ -42,7 +42,7 @@ for (const image of images){
     });
 }
 
-//Now we make updateDisplayedImage a thing
+//Now we make updateDisplayedImage a thing  
 function updateDisplayedImage(ent){
     displayedImage.alt = ent.target.alt;
     displayedImage.src = ent.target.src;
@@ -52,12 +52,12 @@ function updateDisplayedImage(ent){
 btn.addEventListener("click", () =>{
     if (btn.classList.contains("dark")){
         btn.textContent = "Lighten";
-        overlay.style.backgroundColor = "rgb(0 0 0 / 0.5)";
+        overlay.style.backgroundColor = rgb(0, 0, 0 / 0.5);
     }
 
     else{
         btn.textContent = "Darken";
-        overlay.style.backgroundColor = "rgb(0 0 0 / 0)"
+        overlay.style.backgroundColor = rgb(0, 0, 0 / 0);
     }
 
     btn.classList.toggle("dark");
