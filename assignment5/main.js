@@ -1,3 +1,10 @@
+/*
+Name: Amanda Jones
+File: main.js
+Date: April 16, 2026
+Javascript File for assignment 5
+*/
+
 // functionality for showing/hiding the comments section
 
 const showHideBtn = document.querySelector('.show-hide');
